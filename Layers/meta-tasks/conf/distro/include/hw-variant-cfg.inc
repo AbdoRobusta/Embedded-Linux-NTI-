@@ -1,0 +1,2 @@
+ENABLE_UART = "1"
+RPI_USE_U_BOOT = "1"
