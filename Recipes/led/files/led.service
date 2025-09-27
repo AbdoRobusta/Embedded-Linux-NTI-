@@ -1,0 +1,10 @@
+[Unit]
+Description="this is my service"
+
+[Service]
+ExecStart=/usr/bin/led
+Restart=always
+Type=simple
+
+[Install]
+WantedBy=multi.user.target
