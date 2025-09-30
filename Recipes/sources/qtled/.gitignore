@@ -1,0 +1,31 @@
+# Ignore build directories
+build/
+bin/
+obj/
+*.o
+*.exe
+*.dll
+*.so
+
+# Qt user/project files
+*.pro.user
+*.qbs.user
+*.qmlproject.user
+*.user
+
+# Cache and temporary files
+*.autosave
+*.pro.user.*
+*.qmake.stash
+*.qmake.cache
+*.DS_Store
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.ninja
+*.ninja_deps
+*.ninja_log
+
