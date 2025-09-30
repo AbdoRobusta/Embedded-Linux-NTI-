@@ -1,0 +1,11 @@
+[Unit]
+Description=Run leds QT App
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/qtled
+Restart=always
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
