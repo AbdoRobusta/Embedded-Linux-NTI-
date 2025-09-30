@@ -1,0 +1,11 @@
+[Unit]
+Description=Run TicTacToe Game
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/tictactoe
+Restart=always
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
