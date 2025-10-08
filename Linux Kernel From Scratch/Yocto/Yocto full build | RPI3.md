@@ -12,16 +12,16 @@ Before building, clone the essential Yocto layers:
 mkdir -p ~/yocto && cd ~/yocto
 
 # Clone Poky (Yocto Project Core)
-git clone git://git.yoctoproject.org/poky -b scarthgap
+git clone git://git.yoctoproject.org/poky -b kirkstone
 
 # Clone meta-openembedded (extra recipes and dependencies)
-git clone git://git.openembedded.org/meta-openembedded -b scarthgap
+git clone git://git.openembedded.org/meta-openembedded -b kirkstone
 
 # Clone Raspberry Pi BSP layer
-git clone git://git.yoctoproject.org/meta-raspberrypi -b scarthgap
+git clone git://git.yoctoproject.org/meta-raspberrypi -b kirkstone
 
 # Clone meta-yocto-bsp (for reference board support)
-git clone git://git.yoctoproject.org/meta-yocto-bsp -b scarthgap
+git clone git://git.yoctoproject.org/meta-yocto-bsp -b kirkstone
 ```
 
 Then add these layers to your environment later with `bitbake-layers add-layer`.
@@ -197,10 +197,10 @@ sudo dd if=tmp/deploy/images/raspberrypi3-64/core-image-weston-*.rpi-sdimg      
 
 | Layer | Repository | Branch |
 |--------|-------------|---------|
-| **Poky (Yocto Core)** | [git://git.yoctoproject.org/poky](https://git.yoctoproject.org/poky) | `scarthgap` |
-| **meta-openembedded** | [git://git.openembedded.org/meta-openembedded](https://git.openembedded.org/meta-openembedded) | `scarthgap` |
-| **meta-raspberrypi** | [git://git.yoctoproject.org/meta-raspberrypi](https://git.yoctoproject.org/meta-raspberrypi) | `scarthgap` |
-| **meta-yocto-bsp** | [git://git.yoctoproject.org/meta-yocto-bsp](https://git.yoctoproject.org/meta-yocto-bsp) | `scarthgap` |
+| **Poky (Yocto Core)** | [git://git.yoctoproject.org/poky](https://git.yoctoproject.org/poky) | `kirkstone` |
+| **meta-openembedded** | [git://git.openembedded.org/meta-openembedded](https://git.openembedded.org/meta-openembedded) | `kirkstone` |
+| **meta-raspberrypi** | [git://git.yoctoproject.org/meta-raspberrypi](https://git.yoctoproject.org/meta-raspberrypi) | `kirkstone` |
+| **meta-yocto-bsp** | [git://git.yoctoproject.org/meta-yocto-bsp](https://git.yoctoproject.org/meta-yocto-bsp) | `kirkstone` |
 
 ---
 
