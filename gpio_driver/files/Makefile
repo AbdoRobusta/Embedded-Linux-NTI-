@@ -1,8 +1,13 @@
-obj-m += gpiomod.o
+obj-m := gpiomod.o
 
-all:
-	make -C $(KERNEL_SRC) M=$(PWD) modules
+# Yocto will pass KERNEL_SRC or KERNELDIR automatically
+ KDIR ?= $(KERNEL_SRC)
+ PWD := $(shell pwd)
+
+ all:
+	$(MAKE) -C $(KDIR) M=$(PWD) modules
 
 clean:
-	make -C $(KERNEL_SRC) M=$(PWD) clean
+	$(MAKE) -C $(KDIR) M=$(PWD) clean
+
 
