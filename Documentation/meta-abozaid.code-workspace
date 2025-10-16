@@ -1,0 +1,30 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../../yocto/layers/meta-abozaid"
+		},
+		{
+			"name": "Servo_Potentiometer",
+			"path": "../../../../../../Music/Servo_Potentiometer"
+		},
+		{
+			"name": "SerialCom",
+			"path": "../../../../../../Music/SerialCom"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.conf": "bitbake",
+			"*.inc": "bitbake"
+		},
+		"python.autoComplete.extraPaths": [
+			"${workspaceFolder}/sources/poky/bitbake/lib",
+			"${workspaceFolder}/sources/poky/meta/lib"
+		],
+		"python.analysis.extraPaths": [
+			"${workspaceFolder}/sources/poky/bitbake/lib",
+			"${workspaceFolder}/sources/poky/meta/lib"
+		],
+		"liveServer.settings.multiRootWorkspaceName": "meta-abozaid"
+	}
+}
